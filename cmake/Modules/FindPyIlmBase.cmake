@@ -97,7 +97,7 @@ ELSE()
               DOC "The directory where PyImath.h resides")
 
     IF(NOT DEFINED ALEMBIC_PYILMBASE_PYIMATH_LIB)
-        FIND_LIBRARY(ALEMBIC_PYILMBASE_PYIMATH_LIB PyImath
+        FIND_LIBRARY(ALEMBIC_PYILMBASE_PYIMATH_LIB libPyImath.a PyImath
                      PATHS
                      ${LIBRARY_PATHS}
                      DOC "The PyImath library")
